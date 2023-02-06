@@ -34,6 +34,9 @@ insert into products (name, description, code, price) values ('Pokemon scarlet',
 insert into products (name, description, code, price) values ('Aninmal crossing: New horizons', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', '693155505-7', 49.99);
 insert into products (name, description, code, price) values ('Super mario party', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 49.99);
 insert into products (name, description, code, price) values ('Kirby star  allies', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 54.99);
+insert into products (name, description, code, price) values ('Super Mario Maker 2', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 52.00);
+insert into products (name, description, code, price) values ('Kirby star  allies', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 54.99);
+insert into products (name, description, code, price) values ('Kirby star  allies', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 54.99);
 
 /* Consoles */
 INSERT INTO products_hardware (name, description, code, price) values ('Nintendo Switch - OLED Model', 'Get the gaming system that lets you play the games you want, wherever you are. However you like. Bring the full home gaming system experience with you to the park, on an airplane, in a car, or to the apartment of a friend.', '0045496883386', 349.99);
