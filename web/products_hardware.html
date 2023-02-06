@@ -115,8 +115,8 @@
             var data = JSON.parse(this.response) // vertaal response van API naar array met producten
             for (let row in data) { // herhaal voor elke product
               const product = data[row]
-              var name = product.name.substr(0, 35)
-              if(name.length < product.name.length) {
+              var name = product_hardware.name.substr(0, 35)
+              if(name.length < product.named.length) {
                 name = name + '...'
               }
               // voeg product toe aan DOM, 
