@@ -47,7 +47,7 @@ insert into products (name, description, code, price) values ('Super mario party
 insert into products (name, description, code, price) values ('Kirby star  allies', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 54.99);
 insert into products (name, description, code, price) values ('Super Mario Maker 2', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 52.00);
 insert into products (name, description, code, price) values ('splatoon', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 50.99);
-insert into products (name, description, code, price) values ('Wii Party', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 36.99);
+insert into products (name, description, code, price) values ('Wii Party U', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 36.99);
 insert into products (name, description, code, price) values ('pokemon black 2', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 104.99);
 insert into products (name, description, code, price) values ('Sonic Generations ', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 39.99);
 insert into products (name, description, code, price) values ('Yokai watch 2 Gigageesten', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 50.99);
@@ -60,9 +60,40 @@ INSERT INTO consoles (name, description, code, price) values ('Nintendo 3DS', 'N
 INSERT INTO consoles (name, description, code, price) values ('Nintendo Wii U Deluxe Edition', 'Een uniek systeem met een unieke controller vol vermaak voor het hele gezin. De Wii U is een systeem van Nintendo boordevol games en entertainmentmogelijkheden die je alleen of met vrienden en familie kunt beleven. Bij het systeem zit een unieke controller die ongeëvenaarde gameplaymogelijkheden biedt: de Wii U GamePad.', '0045496880866', 159.99);
 
 /* waar de games op kunnen */
+INSERT INTO products_consoles (products_id, consoles_id) values (1, 1);
+INSERT INTO products_consoles (products_id, consoles_id) values (1, 2);
+INSERT INTO products_consoles (products_id, consoles_id) values (1, 3);
 INSERT INTO products_consoles (products_id, consoles_id) values (2, 1);
 INSERT INTO products_consoles (products_id, consoles_id) values (2, 2);
 INSERT INTO products_consoles (products_id, consoles_id) values (2, 3);
+INSERT INTO products_consoles (products_id, consoles_id) values (2, 5);
+INSERT INTO products_consoles (products_id, consoles_id) values (3, 1);
+INSERT INTO products_consoles (products_id, consoles_id) values (3, 2);
+INSERT INTO products_consoles (products_id, consoles_id) values (3, 3);
+INSERT INTO products_consoles (products_id, consoles_id) values (4, 1);
+INSERT INTO products_consoles (products_id, consoles_id) values (4, 2);
+INSERT INTO products_consoles (products_id, consoles_id) values (4, 3);
+INSERT INTO products_consoles (products_id, consoles_id) values (5, 1);
+INSERT INTO products_consoles (products_id, consoles_id) values (5, 2);
+INSERT INTO products_consoles (products_id, consoles_id) values (5, 3);
+INSERT INTO products_consoles (products_id, consoles_id) values (6, 1);
+INSERT INTO products_consoles (products_id, consoles_id) values (6, 2);
+INSERT INTO products_consoles (products_id, consoles_id) values (6, 3);
+INSERT INTO products_consoles (products_id, consoles_id) values (7, 1);
+INSERT INTO products_consoles (products_id, consoles_id) values (7, 2);
+INSERT INTO products_consoles (products_id, consoles_id) values (7, 3);
+INSERT INTO products_consoles (products_id, consoles_id) values (7, 5);
+INSERT INTO products_consoles (products_id, consoles_id) values (8, 1);
+INSERT INTO products_consoles (products_id, consoles_id) values (8, 2);
+INSERT INTO products_consoles (products_id, consoles_id) values (8, 3);
+INSERT INTO products_consoles (products_id, consoles_id) values (8, 5);
+INSERT INTO products_consoles (products_id, consoles_id) values (9, 5);
+INSERT INTO products_consoles (products_id, consoles_id) values (10, 4);
+INSERT INTO products_consoles (products_id, consoles_id) values (11, 4);
+INSERT INTO products_consoles (products_id, consoles_id) values (12, 4);
+
 
 /* categories */
-INSERT INTO categories (name) values (RPG);
+INSERT INTO gategories (name) values ("RPG");
+
+
