@@ -115,20 +115,21 @@
             var data = JSON.parse(this.response) // vertaal response van API naar array met producten
             for (let row in data) { // herhaal voor elke product
               const product = data[row]
-              var name = product.name.substr(0, 35)
-              if(name.length < product.name.length) {
+							console.log(product)
+              var name = product.consoles_name.substr(0, 35)
+              if(name.length < product.consoles_name.length) {
                 name = name + '...'
               }
               // voeg product toe aan DOM, 
               // zodat deze zichtbaar wordt op de webpagina
               const clone = template.content.cloneNode(true);
               clone.querySelector(".product_title").textContent = name
-              clone.querySelector(".product_description").textContent =`${consoles.description.substr(0, 100)}...`
-              clone.querySelector(".product_price").textContent = `€ ${consoles.price.toFixed(2)}`
-              clone.querySelector(".product_code").textContent = consoles.code
-              clone.querySelector(".product_id").dataset.json = JSON.stringify(consoles)
-              clone.querySelector(".product_image").src =`/images/${consoles.id}.jpg`
-              clone.querySelector(".product_id").value = consoles.id
+              clone.querySelector(".product_description").textContent =`${product.consoles_description.substr(0, 100)}...`
+              clone.querySelector(".product_price").textContent = `€ ${product.consoles_price.toFixed(2)}`
+              clone.querySelector(".product_code").textContent = product.consoles_code
+              clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
+              clone.querySelector(".product_image").src =`/images/${product.consoles_id}.jpg`
+              clone.querySelector(".product_id").value = product.consoles_id
               container.appendChild(clone)
             }
           }
