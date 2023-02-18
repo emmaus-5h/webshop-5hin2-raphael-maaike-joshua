@@ -115,7 +115,6 @@
             var data = JSON.parse(this.response) // vertaal response van API naar array met producten
             for (let row in data) { // herhaal voor elke product
               const product = data[row]
-							console.log(product)
               var name = product.consoles_name.substr(0, 35)
               if(name.length < product.consoles_name.length) {
                 name = name + '...'
@@ -128,7 +127,7 @@
               clone.querySelector(".product_price").textContent = `€ ${product.consoles_price.toFixed(2)}`
               clone.querySelector(".product_code").textContent = product.consoles_code
               clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
-              clone.querySelector(".product_image").src =`/images/${product.consoles_id}.jpg`
+              clone.querySelector(".product_image").src =`/images/consoles/${product.consoles_id}.jpg`
               clone.querySelector(".product_id").value = product.consoles_id
               container.appendChild(clone)
             }

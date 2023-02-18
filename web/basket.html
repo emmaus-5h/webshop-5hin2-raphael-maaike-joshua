@@ -17,7 +17,8 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Artikelen</a>
+            <a class="nav-link" href="index.html">Games</a>
+						<a class="nav-link" href="products_hardware.html">Consoles</a>
           </li>
         </ul>
         <a href="basket.html"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Winkelwagen <span class="num_products"></span></button></a>
@@ -191,7 +192,7 @@
           const product = JSON.parse(localStorage.getItem(`item_${id}`))
           const clone = template.content.cloneNode(true)
           clone.querySelector(".product_name").textContent = product.name
-          clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
+          clone.querySelector(".product_price").textContent = `€ ${product..price.toFixed(2)}`
           clone.querySelector(".product_image").src =`images/${product.id}.jpg`
           clone.querySelector(".product_amount_show").textContent = amount             
           clone.querySelector(".product_id_show").textContent = product.id             

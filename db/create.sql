@@ -29,6 +29,15 @@ CREATE TABLE categories (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name VARCHAR(255)
 );
+
+CREATE TABLE reviews (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	name VARCHAR(255),
+	review TEXT,
+	date_posted TEXT,
+	game_name TEXT
+);
+
 --
 -- populate with data
 --
@@ -95,5 +104,6 @@ INSERT INTO products_consoles (products_id, consoles_id) values (12, 4);
 
 /* categories */
 INSERT INTO categories (name) values ("RPG");
-
-
+INSERT INTO categories (name) values ("MMO");
+INSERT INTO categories (name) values ("Adventure");
+INSERT INTO categories (name) values ("Fantasy");
