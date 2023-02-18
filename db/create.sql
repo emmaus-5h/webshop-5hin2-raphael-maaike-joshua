@@ -27,7 +27,7 @@ CREATE TABLE products_consoles (
 
 CREATE TABLE categories (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name VARCHAR(255),
+  name VARCHAR(255)
 );
 --
 -- populate with data
@@ -40,17 +40,17 @@ CREATE TABLE categories (
 
 /* Games */
 insert into products (name, description, code, price, categories_id) values ('The Legend of Zelda: Breath of the Wild', 'Vergeet alles wat je weet over The Legend of Zelda-games. Betreed een wereld vol avontuur om The legend of Zelda: Breath of The Wild, een grensverleggende game in deze bekroonde serie. ', '816905633-0', 60.50, 1);
-insert into products (name, description, code, price) values ('Mario kart 8 deluxe', 'Dankzij de Nintendo Switch kunnen de ultieme versie van mario Kart 8 altijd en overal spelen. Er is zelf een lokale, draadloze multiplayerstand voor maximaal acht spelers! .', '077030122-3', 51.99);
-insert into products (name, description, code, price) values ('Pokemon scarlet', 'Ontdek nieuwe Pokemon in een grenzeloos openwereldavontuur in Pokemon Scarlet op de Nintendo Switch.', '445924201-X', 60.00);
+insert into products (name, description, code, price) values ('Mario Kart 8 Deluxe', 'Dankzij de Nintendo Switch kunnen de ultieme versie van mario Kart 8 altijd en overal spelen. Er is zelf een lokale, draadloze multiplayerstand voor maximaal acht spelers! .', '077030122-3', 51.99);
+insert into products (name, description, code, price) values ('Pokemon Scarlet', 'Ontdek nieuwe Pokemon in een grenzeloos openwereldavontuur in Pokemon Scarlet op de Nintendo Switch.', '445924201-X', 60.00);
 insert into products (name, description, code, price) values ('Aninmal crossing: New horizons', 'In Animal Crossing ontdek je iedere dag nieuwe vrienden en verrassingen. Of je nu de burgemeester bent, huizen ontwerpt of gewoon een kijkje wilt nemen, de wereld van Animal Crossing is altijd een leuke en plezierige plek.', '693155505-7', 49.99);
-insert into products (name, description, code, price) values ('Super mario party', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 49.99);
-insert into products (name, description, code, price) values ('Kirby star  allies', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 54.99);
+insert into products (name, description, code, price) values ('Super Mario Party', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 49.99);
+insert into products (name, description, code, price) values ('Kirby Star Allies', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 54.99);
 insert into products (name, description, code, price) values ('Super Mario Maker 2', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 52.00);
-insert into products (name, description, code, price) values ('splatoon', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 50.99);
+insert into products (name, description, code, price) values ('Splatoon', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 50.99);
 insert into products (name, description, code, price) values ('Wii Party U', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 36.99);
-insert into products (name, description, code, price) values ('pokemon black 2', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 104.99);
-insert into products (name, description, code, price) values ('Sonic Generations ', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 39.99);
-insert into products (name, description, code, price) values ('Yokai watch 2 Gigageesten', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 50.99);
+insert into products (name, description, code, price) values ('Pokemon Black 2', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 104.99);
+insert into products (name, description, code, price) values ('Sonic Generations', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 39.99);
+insert into products (name, description, code, price) values ('Yokai Watch 2 Gigageesten', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 50.99);
 
 /* Consoles */
 INSERT INTO consoles (name, description, code, price) values ('Nintendo Switch - OLED Model', 'Get the gaming system that lets you play the games you want, wherever you are. However you like. Bring the full home gaming system experience with you to the park, on an airplane, in a car, or to the apartment of a friend.', '0045496883386', 349.99);
@@ -94,6 +94,6 @@ INSERT INTO products_consoles (products_id, consoles_id) values (12, 4);
 
 
 /* categories */
-INSERT INTO gategories (name) values ("RPG");
+INSERT INTO categories (name) values ("RPG");
 
 

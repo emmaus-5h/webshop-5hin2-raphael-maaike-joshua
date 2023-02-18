@@ -28,7 +28,8 @@ app.use(express.static('../web'))
 app.get('/api/echo', echoRequest)
 app.get('/api/categories', getCategories)
 app.get('/api/products', getProducts)
-app.get('/api/products/:id', getProductById)
+app.get('/api/consoles', getConsoles)
+
 //app.get('/api/products/:id/related', db.getRelatedProductsById)
 // our API is not protected...so let's not expose these
 // app.post('/api/products', createProduct)
@@ -74,13 +75,14 @@ function getProducts(request, response) {
   console.log('API verstuurt /api/products/')
 }
 
-function getProductById(request, response) {
-  console.log('API ontvangt /api/products/:id', request.query)
+function getConsoles(request, response) {
+  console.log('API ontvangt /api/consoles/', request.query)
   let data = []
-  const product_id = parseInt(request.params.id)
-  const sqlOpdracht = db.prepare('SELECT products.id AS id, products.name AS name, products.description AS description, products.code AS code, products.price AS price FROM products WHERE id = ?')
-  data = sqlOpdracht.all(product_id)
-  response.status(200).json(data[0])
+  const sqlOpdracht = db.prepare('SELECT consoles.id AS consoles_id, consoles.name AS consoles_name, consoles.description AS consoles_description, consoles.code AS consoles_code, consoles.price AS consoles_price FROM consoles ORDER BY id ASC')
+  data = sqlOpdracht.all()
+  // console.log(JSON.stringify(data, null, 2))
+  response.status(200).send(data)
+  console.log('API verstuurt /api/consoles/')
 }
 
 /*

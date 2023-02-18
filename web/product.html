@@ -79,17 +79,18 @@
 
         var request = new XMLHttpRequest()
         request.open('GET', `/api/products/${productId}`, true)
+			//request.open('GET', `/api/consoles/${consolesId}`, true)
         request.onload = function () {
             var product = JSON.parse(this.response)
             if (request.status >= 200 && request.status < 400) {
                 const clone = template.content.cloneNode(true);
-                clone.querySelector(".product_title").textContent += product.name
-                clone.querySelector(".product_description").textContent = product.description
-                clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
-                clone.querySelector(".product_code").textContent = product.code
-                clone.querySelector(".product_id").value = product.id
-                clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
-                clone.querySelector(".product_image").src =`/images/${product.id}.jpg`
+                clone.querySelector(".product_title").textContent += products.name
+                clone.querySelector(".product_description").textContent = products.description
+                clone.querySelector(".product_price").textContent = `€ ${products.price.toFixed(2)}`
+                clone.querySelector(".product_code").textContent = products.code
+                clone.querySelector(".product_id").value = products.id
+                clone.querySelector(".product_id").dataset.json = JSON.stringify(products)
+                clone.querySelector(".product_image").src =`/images/${products.id}.jpg`
 
                 container.appendChild(clone)
             } else {
