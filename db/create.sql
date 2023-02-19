@@ -49,17 +49,17 @@ CREATE TABLE reviews (
 
 /* Games */
 insert into products (name, description, code, price, categories_id) values ('The Legend of Zelda: Breath of the Wild', 'Vergeet alles wat je weet over The Legend of Zelda-games. Betreed een wereld vol avontuur om The legend of Zelda: Breath of The Wild, een grensverleggende game in deze bekroonde serie. ', '816905633-0', 60.50, 1);
-insert into products (name, description, code, price) values ('Mario Kart 8 Deluxe', 'Dankzij de Nintendo Switch kunnen de ultieme versie van mario Kart 8 altijd en overal spelen. Er is zelf een lokale, draadloze multiplayerstand voor maximaal acht spelers! .', '077030122-3', 51.99);
-insert into products (name, description, code, price) values ('Pokemon Scarlet', 'Ontdek nieuwe Pokemon in een grenzeloos openwereldavontuur in Pokemon Scarlet op de Nintendo Switch.', '445924201-X', 60.00);
-insert into products (name, description, code, price) values ('Aninmal crossing: New horizons', 'In Animal Crossing ontdek je iedere dag nieuwe vrienden en verrassingen. Of je nu de burgemeester bent, huizen ontwerpt of gewoon een kijkje wilt nemen, de wereld van Animal Crossing is altijd een leuke en plezierige plek.', '693155505-7', 49.99);
-insert into products (name, description, code, price) values ('Super Mario Party', 'Geef altijd, overal en met iedereen een feestje in Super Mario Party.', '686928463-6', 49.99);
-insert into products (name, description, code, price) values ('Kirby Star Allies', 'Samen met je vrienden sta je sterk in Krby Star Allies.', '492662523-7', 54.99);
-insert into products (name, description, code, price) values ('Super Mario Maker 2', 'Het aantal Levels in super mario maker is vrijwel onbeperkt. daarom biedt deze game je eindeloos mario-plezier.', '492662523-7', 52.00);
-insert into products (name, description, code, price) values ('Splatoon', 'ga kliederen in teams van vier in Splatoon .', '492662523-7', 50.99);
-insert into products (name, description, code, price) values ('Wii Party U', 'Vecht, dans en race tegen je vrienden op Wii Party.', '492662523-7', 36.99);
-insert into products (name, description, code, price) values ('Pokemon Black 2', 'Het nieuwe pokemon in de Unova regio gaat van start ga samen met je vrienden op reis en versla de champion.', '492662523-7', 104.99);
-insert into products (name, description, code, price) values ('Sonic Generations', 'Help sonic en zijn vriend van de kwaadardige dokter Eggman.', '492662523-7', 39.99);
-insert into products (name, description, code, price) values ('Yokai Watch 2 Gigageesten', 'Er staan missies, nieuwe locaties en nog veel meer te wachten als de ondeugende Yo-kai Wicked worden.', '492662523-7', 50.99);
+insert into products (name, description, code, price) values ('Mario Kart 8 Deluxe', 'Dankzij de Nintendo Switch kunnen de ultieme versie van mario Kart 8 altijd en overal spelen. Er is zelf een lokale, draadloze multiplayerstand voor maximaal acht spelers! .', '077030122-3', 51.99, 2);
+insert into products (name, description, code, price) values ('Pokemon Scarlet', 'Ontdek nieuwe Pokemon in een grenzeloos openwereldavontuur in Pokemon Scarlet op de Nintendo Switch.', '445924201-X', 60.00, 1);
+insert into products (name, description, code, price) values ('Aninmal crossing: New horizons', 'In Animal Crossing ontdek je iedere dag nieuwe vrienden en verrassingen. Of je nu de burgemeester bent, huizen ontwerpt of gewoon een kijkje wilt nemen, de wereld van Animal Crossing is altijd een leuke en plezierige plek.', '693155505-7', 49.99, 3);
+insert into products (name, description, code, price) values ('Super Mario Party', 'Geef altijd, overal en met iedereen een feestje in Super Mario Party.', '686928463-6', 49.99, 4);
+insert into products (name, description, code, price) values ('Kirby Star Allies', 'Samen met je vrienden sta je sterk in Krby Star Allies.', '492662523-7', 54.99, 5);
+insert into products (name, description, code, price) values ('Super Mario Maker 2', 'Het aantal Levels in super mario maker is vrijwel onbeperkt. daarom biedt deze game je eindeloos mario-plezier.', '492662523-7', 52.00, 5);
+insert into products (name, description, code, price) values ('Splatoon', 'ga kliederen in teams van vier in Splatoon .', '492662523-7', 50.99, 6);
+insert into products (name, description, code, price) values ('Wii Party U', 'Vecht, dans en race tegen je vrienden op Wii Party.', '492662523-7', 36.99, 4);
+insert into products (name, description, code, price) values ('Pokemon Black 2', 'Het nieuwe pokemon in de Unova regio gaat van start ga samen met je vrienden op reis en versla de champion.', '492662523-7', 104.99, 1);
+insert into products (name, description, code, price) values ('Sonic Generations', 'Help sonic en zijn vriend van de kwaadardige dokter Eggman.', '492662523-7', 39.99, 5);
+insert into products (name, description, code, price) values ('Yokai Watch 2 Gigageesten', 'Er staan missies, nieuwe locaties en nog veel meer te wachten als de ondeugende Yo-kai Wicked worden.', '492662523-7', 50.99, 3);
 
 /* Consoles */
 INSERT INTO consoles (name, description, code, price) values ('Nintendo Switch - OLED Model', 'Get the gaming system that lets you play the games you want, wherever you are. However you like. Bring the full home gaming system experience with you to the park, on an airplane, in a car, or to the apartment of a friend.', '0045496883386', 349.99);
@@ -104,9 +104,11 @@ INSERT INTO products_consoles (products_id, consoles_id) values (12, 4);
 
 /* categories */
 INSERT INTO categories (name) values ("RPG");
-INSERT INTO categories (name) values ("MMO");
+INSERT INTO categories (name) values ("Racegame");
 INSERT INTO categories (name) values ("Adventure");
-INSERT INTO categories (name) values ("Fantasy");
+INSERT INTO categories (name) values ("Partysgame");
+INSERT INTO categories (name) values ("Platformgame");
+INSERT INTO categories (name) values ("Third-person shooting game");
 
 /* reviews */
 INSERT INTO reviews (name,review,datum) values  ("The Legend of Zelda"," Awesome open world game. Great story, nice atmosphere and so much to do.","11 december 2022"); 
