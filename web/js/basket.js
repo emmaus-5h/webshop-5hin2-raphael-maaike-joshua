@@ -14,8 +14,8 @@ function getProductInfo(id) {
   return JSON.parse(localStorage.getItem(`item_${id}`))
 }
 
-function getConsoleInfo(id) {
-  return JSON.parse(localStorage.getItem(`item_${id}`))
+function getProductInfoConsoles(id) {
+	return JSON.parse(localStorage.getItem(`item_${id}`))
 }
 
 function getClosest(el, qry) {

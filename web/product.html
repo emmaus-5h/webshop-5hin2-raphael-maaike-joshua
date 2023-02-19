@@ -80,7 +80,6 @@
 
         var request = new XMLHttpRequest()
         request.open('GET', `/api/products/${productId}`, true)
-			//request.open('GET', `/api/consoles/${consolesId}`, true)
         request.onload = function () {
             var product = JSON.parse(this.response)
             if (request.status >= 200 && request.status < 400) {
